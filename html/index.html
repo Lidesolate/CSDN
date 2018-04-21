@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/vue.js"></script>
+    <script src="../js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="index_nav_box clearfix">
+            <div class="nav_box">
+                <div class="nav_logo"></div>
+            </div>
+            <div class="index_name">
+                <span>CSND</span>
+            </div>  
+            <div class="index_search">
+                <i class="search_logo"></i>
+                <a href="../html/login.html" :class="showHide?'hide':'show'">登录</a>
+                <a href="../html/mycenter.html" :class="showHide?'show':'hide'">已登录</a>
+            </div>
+        </div>
+
+        <div class="nav-mask">
+            <div class="warp">
+                <a href="" class="wrap_active">推荐</a>
+                <a href="">最新文章</a>
+                <a href="">关注</a>
+                <a href="">咨询</a>
+                <a href="">人工智能</a>
+                <a href="">云计算</a>
+                <a href="">推荐</a>
+                <a href="">最新文章</a>
+                <a href="">关注</a>
+                <a href="">咨询</a>
+                <a href="">人工智能</a>
+                <a href="">云计算</a>
+            </div>
+        </div>
+
+        <div class="index_lunbo">
+
+        </div>
+
+        <div class="feedlist_box">
+            <ul class="feedlist_mod">
+                <li v-for="item in resData.data.blog_lists">
+                    <a v-bind:href="'../html/details.html?id='+item.id" class="item_a">
+                        <h2>
+                            {{item.title}}
+                        </h2>
+                        <div class="info-tag">
+                            <div class="tag">
+                                <a href="" class="btn-nav">{{item.classify_name}}</a>
+                            </div>
+                            <div class="user-name">
+                                <a href="">{{item.author_name}}</a>
+                            </div>
+                            <div class="read-count">
+                                {{item.read_num}}阅读
+                            </div>
+                            <div class="date">
+                                {{item.date}}
+                            </div>
+                            <div class="unlike-box">
+                                ×
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/index.js">
+        
+    </script>
+</body>
+</html>

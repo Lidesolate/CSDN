@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /* text-decoration: none; */
+}
+html,body{
+    font-size: 48px;
+}
+.login_box_border{
+    width: 90%;
+    margin:10% 5%;
+    padding-bottom:5%; 
+    font-size: 12px;
+    border-radius: 10px;
+    background: #fefefe;
+    border: 1px solid #d5dce5
+}
+.login_title{
+    /* width: 90%; */
+    font-size: 1.5em;
+    color: #4d5e73;
+    padding: 25px 30px 15px 30px;
+}
+.login_input .user_name,.user_pass{
+    background: #fff;
+    display: block;
+    width: 80%;
+    padding: 12px 0;
+    border: 1px solid #d5dce5;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    font-weight: normal;
+    text-indent: 23px;
+    outline: 0;
+    font-size: 1.25em;
+    border-radius: 3px;
+    color:#d5dce5;
+}
+.row{
+    width:80%;
+    margin-left: 5%;
+    margin-top: 10px;
+    color: #4d5e73;
+    font-size: 1em;
+}
+.forget-password{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+}
+.Text_true{ 
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.forget_text{
+    color: #4d5e73;
+}
+.forget{
+    display: inline-block;
+    color: #4d5e73;
+    float: right;
+    margin-right: -20px;
+}
+.forget a{
+    margin-left: 20px;
+    color: #4d5e73;
+}
+.bot_ture{
+    width: 80%;
+    margin-left: 10%;
+}
+.bot_ture input{
+    background: #c90a16;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    clear: both;
+    width: 100%;
+    border: solid 1px #c90000;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #fff inset;
+}
